@@ -1157,7 +1157,6 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libshoebox \
     libvolumelistener \
-    vendor.aac.hardware.richtap.vibrator-V1-ndk_platform \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
