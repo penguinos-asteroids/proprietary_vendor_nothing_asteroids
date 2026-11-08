@@ -14495,31 +14495,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-21.7",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-lite-21.7.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqc2audio_base",
     owner: "nothing",
     strip: {
@@ -24850,15 +24825,6 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest.xml",
-    owner: "nothing",
-    src: "proprietary/odm/etc/vintf/manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf",
-    device_specific: true,
 }
 
 prebuilt_etc_xml {

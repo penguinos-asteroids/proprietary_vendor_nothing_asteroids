@@ -987,7 +987,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpfr \
     libportrait_repair_qnn \
-    libprotobuf-cpp-lite-21.7 \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1355,7 +1354,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
     vendor.qti.hardware.vibrator.service.xml \
-    manifest.xml \
     manifest_JPN.xml \
     ATFWD-daemon \
     adpl \
