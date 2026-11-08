@@ -353,6 +353,15 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_codecs_volcano_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_volcano_v3.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_qv0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_qv0.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v0.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v0_Base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v0_Base.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v0_Pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v0_Pro.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v1.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v1_Base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v1_Base.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v1_Pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v1_Pro.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v2.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v3.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nothing/asteroids/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -1392,6 +1401,7 @@ PRODUCT_PACKAGES += \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
+    init.qti.media \
     init.qti.qcv \
     irsc_util \
     ks \
