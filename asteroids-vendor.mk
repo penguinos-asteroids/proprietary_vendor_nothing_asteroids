@@ -299,6 +299,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/nothing/asteroids/proprietary/vendor/etc/init/st_getcplc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/st_getcplc.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.noth.hardware.camera-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.camera-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
@@ -588,7 +589,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1_vendor \
     android.hardware.secure_element.thales.libse \
     btaudio_offload_if \
     com.qti.eeprom.arcanine_back_imx882_eeprom \
@@ -1493,6 +1493,7 @@ PRODUCT_PACKAGES += \
     ssgtzd \
     ssr_diag \
     ssr_setup \
+    st_getcplc \
     subsystem_ramdump \
     tftp_server \
     thermal-engine-v2 \

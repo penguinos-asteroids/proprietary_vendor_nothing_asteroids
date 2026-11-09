@@ -11,36 +11,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth@1.1_vendor",
-    stem: "android.hardware.bluetooth@1.1",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.secure_element.thales.libse",
     owner: "nothing",
     strip: {
@@ -27864,6 +27834,37 @@ cc_prebuilt_binary {
                 "libutils",
                 "libmdmdetect",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "st_getcplc",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/st_getcplc",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.nfc-V1-ndk",
+                "nfc_nci.st21nfc.st",
+                "libstfactory-vendor",
                 "libc++",
                 "libc",
                 "libm",
