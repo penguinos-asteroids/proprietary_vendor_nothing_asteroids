@@ -8157,6 +8157,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib-imsdcservice",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-imsdcservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libandroid_net",
+                "libdiag",
+                "libnetutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib-imsdpl",
     owner: "nothing",
     strip: {
@@ -8509,6 +8542,35 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCneAppJni",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libCneAppJni.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libbinder_ndk",
+                "libandroid_runtime_lazy",
+                "vendor.qti.data.factoryservice-V1-ndk_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -26791,6 +26853,38 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ims-dataservice-daemon",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/ims-dataservice-daemon",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libbinder_ndk",
+                "lib-imsdcservice",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
