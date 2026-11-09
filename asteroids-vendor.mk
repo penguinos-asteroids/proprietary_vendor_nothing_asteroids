@@ -58,10 +58,15 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/acdbdata/volcano_qrd_wsa883x/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/volcano_qrd_wsa883x/QRD_workspaceFileXml.qwsp \
     vendor/nothing/asteroids/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_effects.conf \
+    vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_effects.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_policy_configuration.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_policy_volumes.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/default_volume_tables.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/mixer_paths_volcano_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/mixer_paths_volcano_qrd.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/r_submix_audio_policy_configuration.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano/resourcemanager_volcano_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/resourcemanager_volcano_qrd.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano_qssi/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/audio_effects.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano_qssi/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/audio_policy_volumes.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio/sku_volcano_qssi/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/default_volume_tables.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
@@ -260,6 +265,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
+    vendor/nothing/asteroids/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
@@ -401,6 +407,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
+    vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
@@ -481,6 +488,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
+    vendor/nothing/asteroids/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -580,6 +588,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1_vendor \
     android.hardware.secure_element.thales.libse \
     btaudio_offload_if \
     com.qti.eeprom.arcanine_back_imx882_eeprom \
@@ -719,11 +728,13 @@ PRODUCT_PACKAGES += \
     camx.provider-impl \
     com.qti.camx.chiiqutils \
     com.qti.chiusecaseselector \
+    com.qti.feature2.afbrckt \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
     com.qti.feature2.derivedoffline \
     com.qti.feature2.fusion \
     com.qti.feature2.generic \
+    com.qti.feature2.gs.milos \
     com.qti.feature2.hdr \
     com.qti.feature2.mcreprocrt \
     com.qti.feature2.memcpy \
@@ -742,6 +753,7 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.swmf \
     com.qti.qseeaon \
     com.qti.qseeutils \
+    com.qti.settings.milos \
     com.qti.stats.common \
     com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
@@ -760,8 +772,10 @@ PRODUCT_PACKAGES += \
     ftm_fm_lib \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@1.1-impl-qti \
     audio.bluetooth_qti.default \
     audio.primary.volcano \
+    camera.qcom.milos \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
@@ -774,6 +788,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -803,6 +818,7 @@ PRODUCT_PACKAGES += \
     libQtiRilLoadable \
     libTrustedInputUtils \
     libVoiceSdk \
+    libWlanServiceJni \
     lib_lvacfs \
     libaacvibrator \
     libadm \
@@ -900,6 +916,7 @@ PRODUCT_PACKAGES += \
     libgdtap \
     libgf_hal \
     libgnsspps \
+    libgpt \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_stub \
@@ -913,6 +930,7 @@ PRODUCT_PACKAGES += \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
+    libisphwsetting \
     libizat_client_api \
     libizat_core \
     libjni_aidenoiserutilv2 \
@@ -1250,6 +1268,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.factory@1.1 \
     vendor.qti.hardware.limits@1.0_vendor \
     vendor.qti.hardware.limits@1.1_vendor \
+    vendor.qti.hardware.limits@1.2_vendor \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk_vendor \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
@@ -1345,25 +1364,60 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     androidx.camera.extensions.impl.advanced \
+    ImsRtpService-aidl.xml \
+    android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.radio.config.xml \
+    android.hardware.radio.data.xml \
+    android.hardware.radio.messaging.xml \
+    android.hardware.radio.modem.xml \
+    android.hardware.radio.network.xml \
+    android.hardware.radio.sap.xml \
+    android.hardware.radio.sim.xml \
+    android.hardware.radio.voice.xml \
     android.hardware.secure_element.xml \
     android.hardware.security.keymint-service-qti.xml \
+    atfwd-saidl.xml \
+    bluetooth_audio.xml \
+    bttpi-saidl.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     dataconnection-saidl.xml \
+    datafactoryservice-saidl.xml \
+    deviceinfo-saidl.xml \
+    dpm-saidl.xml \
+    imsdcservice-saidl.xml \
+    manifest_identity_credential.xml \
+    manifest_non_qmaa.xml \
+    manifest_non_qmaa_extn.xml \
     memtrack_qti.xml \
+    mwqem-saidl.xml \
     power.stats.xml \
+    qcrilhook-saidl.xml \
+    qms-saidl.xml \
     qtiradio-saidl.xml \
     vendor.noth.hardware.camera-service-v1.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
+    vendor.qti.camera.offlinecamera-impl.xml \
+    vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.data.connectionaidl.xml \
+    vendor.qti.hardware.data.iwlandata.xml \
+    vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.limits-service.xml \
+    vendor.qti.hardware.qseecom@1.0-service.xml \
+    vendor.qti.hardware.radio.am.xml \
     vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.radio.lpa.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
+    vendor.qti.hardware.radio.uim.xml \
+    vendor.qti.hardware.radio.uim_remote_client.xml \
+    vendor.qti.hardware.radio.uim_remote_server.xml \
     vendor.qti.hardware.vibrator.service.xml \
+    vendor.qti.ims.factoryaidlservice.xml \
     manifest_JPN.xml \
     ATFWD-daemon \
     adpl \
@@ -1380,6 +1434,7 @@ PRODUCT_PACKAGES += \
     embmsslServer \
     engine-service \
     feature_enabler_client \
+    android.hardware.bluetooth@1.1-service-qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.identity-service-qti \
     android.hardware.nfc-service-st \
@@ -1394,6 +1449,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.factory@1.0-service \
+    vendor.qti.hardware.limits@1.2-service \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.vibrator.service \
@@ -1432,6 +1488,7 @@ PRODUCT_PACKAGES += \
     shsusrd \
     slim_daemon \
     sscrpcd \
+    ssgqmigd \
     ssgqmigd64 \
     ssgtzd \
     ssr_diag \
