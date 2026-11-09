@@ -1116,6 +1116,7 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libtensorflowlite_c-nothing \
     libtestutils \
     libtfestriping \
     libthermalclient \

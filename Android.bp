@@ -8557,7 +8557,7 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c-nothing",
                 "libm",
                 "libc",
             ],
@@ -10123,7 +10123,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c-nothing",
                 "libc++",
                 "libc",
                 "libm",
@@ -10374,6 +10374,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcne.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libdiag",
@@ -12245,7 +12246,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c-nothing",
                 "libc++",
                 "libc",
                 "libm",
@@ -13723,6 +13724,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libntcamallocator.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -14812,6 +14814,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqcc_sdk.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -16368,6 +16371,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqms_client.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "liblog",
                 "libbinder",
                 "libutils",
@@ -18135,6 +18139,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtensorflowlite_c-nothing",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite_c-nothing.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -20528,6 +20556,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.libdpmframework.so",
             ],
             shared_libs: [
+                "libhidlbase_shim",
+                "libbinder_shim",
                 "libdiag",
                 "libbinder",
                 "libbinder_ndk",
@@ -20659,6 +20689,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.noth.hardware.camera-service-impl.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26506,6 +26537,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qms",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libavservices_minijail",
                 "libcutils",
                 "liblog",
@@ -27269,6 +27301,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/xtra-daemon",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libutils",
                 "libcutils",
                 "libcrypto",
